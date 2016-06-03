@@ -7,8 +7,17 @@ module.exports = {
 	},
 	// マイページ
 	mypage: function (req, res) {
-		res.view();
-	}
+		var user_id = 1;
+		User.findOne({
+			id: user_id
+		}).exec(function (err, finn){
+			if (err) {
+				return res.negotiate(err);
+			}
 
+			sails.log('Found "%s"', finn);
+			return res.view(finn);
+		});
+	}
 };
 
