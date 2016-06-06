@@ -1,17 +1,14 @@
 'use strict';
-/**
- * User.js
- *
- * @description :: TODO: You might write a short summary of how this model works and what it represents here.
- * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
- */
+
+// ユーザーテーブル
 
 module.exports = {
 	connection: 'mysql1',
 	attributes: {
 		id: {
 			type: 'integer',
-			size: 64
+			size: 64,
+			primaryKey: true,
 		},
 		name: {
 			type: 'string'
