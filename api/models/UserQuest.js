@@ -21,7 +21,7 @@ module.exports = {
 			size: 32,
 		},
 		// 節
-		paragragh: {
+		paragraph: {
 			type: 'integer',
 			size: 32
 		},

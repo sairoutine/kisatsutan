@@ -20,7 +20,7 @@ module.exports = {
 			size: 32,
 		},
 		// 節
-		paragragh: { // PK2
+		paragraph: { // PK2
 			type: 'integer',
 			size: 32
 		},
