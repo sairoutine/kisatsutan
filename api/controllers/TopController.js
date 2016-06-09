@@ -1,3 +1,4 @@
+/* global User, sails */
 'use strict';
 
 module.exports = {
@@ -7,6 +8,7 @@ module.exports = {
 	},
 	// マイページ
 	mypage: function (req, res) {
+		// dummy
 		var user_id = 1;
 		User.findOne({
 			id: user_id
